@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Portfolio</title>
+    <link rel="stylesheet" href="styles.css?v=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link active">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="skills.html" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="education.html" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>About Me</h1>
+            <p>Get to know me better</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-content">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Who I Am</h2>
+                    <p>
+                        I'm a passionate and enthusiastic developer who recently completed my degree in computer science. 
+                        I have a strong foundation in programming fundamentals and a keen interest in web development, 
+                        particularly in creating responsive and user-friendly applications.
+                    </p>
+                    <p>
+                        As a fresher, I'm excited to bring fresh perspectives and innovative ideas to the tech industry. 
+                        I'm constantly learning new technologies and frameworks to enhance my skills and stay current 
+                        with industry trends. I believe in writing clean, maintainable code and creating solutions that 
+                        make a real impact.
+                    </p>
+                    
+                    <h3>My Journey</h3>
+                    <p>
+                        My journey in technology began with a curiosity about how things work on the internet. 
+                        Throughout my academic career, I've worked on various academic projects and personal coding 
+                        challenges, always focusing on learning best practices and improving my problem-solving skills.
+                    </p>
+                    
+                    <h3>International Experience</h3>
+                    
+                    <!-- International Experience Image Carousel -->
+                    <div class="international-carousel">
+                        <h4 class="carousel-title">My Experience in Germany</h4>
+                        <div class="carousel-container">
+                            <div class="carousel-slide active">
+                                <img src="images/university/study-abroad-journey.jpg" alt="Study Abroad Journey" class="carousel-image">
+                                <div class="carousel-caption">
+                                    <h5>Study Abroad Journey</h5>
+                                    <p>One of 4 selected students for semester exchange</p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/university/hof-university.jpg" alt="Hof University" class="carousel-image">
+                                <div class="carousel-caption">
+                                    <h5>Hof University</h5>
+                                    <p>Applied Sciences Campus</p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/university/aws-cloud-project.jpg" alt="AWS Cloud Project" class="carousel-image">
+                                <div class="carousel-caption">
+                                    <h5>AWS Cloud Project</h5>
+                                    <p>ownCloud on EC2 with Docker & HAProxy</p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/university/deep-learning.jpg" alt="Deep Learning" class="carousel-image">
+                                <div class="carousel-caption">
+                                    <h5>Deep Learning</h5>
+                                    <p>Exploring AI & Machine Learning</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Carousel Navigation -->
+                        <button class="carousel-btn prev-btn" onclick="changeSlide(-1)">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn next-btn" onclick="changeSlide(1)">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        
+                        <!-- Carousel Indicators -->
+                        <div class="carousel-indicators">
+                            <span class="indicator active" onclick="currentSlide(1)"></span>
+                            <span class="indicator" onclick="currentSlide(2)"></span>
+                            <span class="indicator" onclick="currentSlide(3)"></span>
+                            <span class="indicator" onclick="currentSlide(4)"></span>
+                        </div>
+                    </div>
+                    
+                    <p>
+                        I was one of the 4 students from my college selected for the semester exchange program at 
+                        <b>Hof University of Applied Sciences, Germany.</b> During my 6 months there, I explored deep learning 
+                        concepts and AWS cloud services, and carried out a project to host ownCloud file management 
+                        system on EC2 instances using both Docker and Apache2, along with technologies like HAProxy 
+                        load balancing to understand cloud computing fundamentals.
+                    </p>
+                    <p>
+                        This international experience taught me valuable lessons in cross-cultural collaboration as I 
+                        formed teams with German natives to complete these projects. While there, I also had the 
+                        opportunity to explore various parts of Europe, broadening my cultural and professional horizons. 
+                        I'm now ready to take the next step in my professional journey and contribute to meaningful projects.
+                    </p>
+                </div>
+                
+                <div class="about-image">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <img src="images/IMG_20250807_185402.jpg" alt="Atharva Umakant Sarada" class="profile-photo">
+                        </div>
+                        <h3>Atharva Umakant Sarada</h3>
+                        <p class="profile-title">Fresh Graduate Developer</p>
+                        <div class="profile-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Sangli, Maharashtra, India</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>atharvasarada47@gmail.com</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+91 9022664540</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section class="interests">
+        <div class="container">
+            <h2>Interests & Hobbies</h2>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Coding</h3>
+                    <p>Building and experimenting with new technologies</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-book"></i>
+                    <h3>Reading</h3>
+                    <p>Tech blogs and industry articles</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Gaming</h3>
+                    <p>FPS and competitive games</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Gym</h3>
+                    <p>Intense weight training for strength</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-hiking"></i>
+                    <h3>Outdoor Activities</h3>
+                    <p>Hiking, photography, and exploring nature</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <p>&copy; 2025 Atharva Umakant Sarada. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/AtharvaSarada" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/atharva-sarada-ak47/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:atharvasarada47@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
