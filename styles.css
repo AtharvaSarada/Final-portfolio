@@ -1962,3 +1962,11 @@ a:focus {
         height: 8px;
     }
 }
+@media (min-width: 769px) {
+    .dark-theme .nav-menu {
+        background: none !important;
+        border: none !important;
+        box-shadow: none !important;
+        backdrop-filter: none !important;
+    }
+}
