@@ -420,8 +420,35 @@ function initThemeToggle() {
     });
 }
 
-// Initialize theme toggle
+// Initialize theme toggle with multiple fallbacks
 document.addEventListener('DOMContentLoaded', initThemeToggle);
+window.addEventListener('load', initThemeToggle);
+
+// Also try immediately if DOM is already ready
+if (document.readyState !== 'loading') {
+    initThemeToggle();
+}
+
+// Additional safety check
+setTimeout(initThemeToggle, 100);
+
+
+
+// Apply saved theme immediately to prevent flash of wrong theme
+function applySavedTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-theme');
+    }
+}
+
+// Apply theme as early as possible
+if (document.body) {
+    applySavedTheme();
+}
+
+// Also apply theme when DOM is ready
+document.addEventListener('DOMContentLoaded', applySavedTheme);
 
 // Add dark theme styles
 const darkThemeStyle = document.createElement('style');

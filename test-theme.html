@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Toggle Test</title>
+    <link rel="stylesheet" href="styles.css?v=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .test-content {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .theme-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: #fbbf24;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 20px auto;
+        }
+        .theme-toggle:hover {
+            transform: scale(1.1);
+        }
+        .theme-toggle i {
+            color: #1f2937;
+            font-size: 1.1rem;
+        }
+        .dark-theme {
+            background-color: #1f2937;
+            color: #f9fafb;
+        }
+        .dark-theme .test-content {
+            background: #374151;
+            color: #f9fafb;
+        }
+        .dark-theme .theme-toggle {
+            background: #60a5fa;
+        }
+        .dark-theme .theme-toggle i {
+            color: #1f2937;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-content">
+        <h1>Theme Toggle Test</h1>
+        <p>This page tests if the dark mode toggle is working correctly.</p>
+        <p>Click the button below to toggle between light and dark themes:</p>
+        
+        <div class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+        </div>
+        
+        <p>Current theme: <span id="currentTheme">Light</span></p>
+        <p>Local storage value: <span id="storageValue">None</span></p>
+        
+        <button onclick="checkTheme()">Check Theme Status</button>
+        <button onclick="clearStorage()">Clear Storage</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function checkTheme() {
+            const isDark = document.body.classList.contains('dark-theme');
+            const storage = localStorage.getItem('theme');
+            
+            document.getElementById('currentTheme').textContent = isDark ? 'Dark' : 'Light';
+            document.getElementById('storageValue').textContent = storage || 'None';
+            
+            console.log('Body has dark-theme class:', isDark);
+            console.log('Local storage theme:', storage);
+        }
+        
+        function clearStorage() {
+            localStorage.removeItem('theme');
+            location.reload();
+        }
+        
+        // Check theme status on load
+        setTimeout(checkTheme, 1000);
+    </script>
+</body>
+</html>
+
