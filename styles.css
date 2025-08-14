@@ -234,6 +234,27 @@ p {
     transform: translateY(-2px);
 }
 
+/* Button Loading State */
+.btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+.btn .button-text,
+.btn .button-loading {
+    display: inline-block;
+}
+
+.btn .button-loading i {
+    margin-right: 8px;
+}
+
+.btn:disabled:hover {
+    transform: none !important;
+    box-shadow: none !important;
+}
+
 /* Hero Section */
 .hero {
     padding: 120px 0 80px;

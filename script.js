@@ -66,11 +66,16 @@ faqItems.forEach(item => {
     });
 });
 
+// Initialize EmailJS
+(function() {
+    emailjs.init("Gt63vNf0S6r0I1-YJ"); 
+})();
+
 // Contact Form Handling
 const contactForm = document.getElementById('contactForm');
 
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         
         // Get form data
@@ -90,14 +95,48 @@ if (contactForm) {
             return;
         }
         
-        // Simulate form submission
-        showNotification('Thank you! Your message has been sent successfully.', 'success');
+        // Show loading state
+        const sendButton = document.getElementById('sendButton');
+        const buttonText = sendButton.querySelector('.button-text');
+        const buttonLoading = sendButton.querySelector('.button-loading');
         
-        // Reset form
-        contactForm.reset();
+        buttonText.style.display = 'none';
+        buttonLoading.style.display = 'inline-block';
+        sendButton.disabled = true;
         
-        // In a real application, you would send the data to a server here
-        console.log('Form data:', data);
+        try {
+            // Send email using EmailJS
+            const templateParams = {
+                from_name: data.name,
+                from_email: data.email,
+                subject: data.subject,
+                message: data.message,
+                to_email: 'atharvasarada47@gmail.com'
+            };
+            
+            
+            const response = await emailjs.send(
+                'service_6adwf7f', 
+                'template_uu31kco', 
+                templateParams
+            );
+            
+            if (response.status === 200) {
+                showNotification('Thank you! Your message has been sent successfully. I\'ll get back to you soon!', 'success');
+                contactForm.reset();
+            } else {
+                throw new Error('Failed to send email');
+            }
+            
+        } catch (error) {
+            console.error('Email sending failed:', error);
+            showNotification('Sorry, there was an error sending your message. Please try again or contact me directly at atharvasarada47@gmail.com', 'error');
+        } finally {
+            // Reset button state
+            buttonText.style.display = 'inline-block';
+            buttonLoading.style.display = 'none';
+            sendButton.disabled = false;
+        }
     });
 }
 
