@@ -16,6 +16,20 @@ body {
     background-color: #ffffff;
 }
 
+/* Dark theme body styles */
+.dark-theme {
+    color: #f9fafb;
+    background-color: #111827;
+}
+
+.dark-theme h1, .dark-theme h2, .dark-theme h3, .dark-theme h4, .dark-theme h5, .dark-theme h6 {
+    color: #f9fafb;
+}
+
+.dark-theme p {
+    color: #d1d5db;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -106,6 +120,7 @@ p {
     gap: 2rem;
     border: none;
     outline: none;
+    
 }
 
 .nav-item {
@@ -162,6 +177,7 @@ p {
 
 .dark-theme .nav-link.active::after {
     background: #60a5fa;
+    transition: all 0.3s ease;
 }
 
 .nav-link:hover,
@@ -177,6 +193,7 @@ p {
     width: 100%;
     height: 2px;
     background: #2563eb;
+    transition: all 0.3s ease;
 }
 
 .hamburger {
@@ -405,6 +422,11 @@ p {
     background: #f8fafc;
 }
 
+/* Dark theme stats section */
+.dark-theme .stats {
+    background: #1f2937;
+}
+
 .stats-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -423,6 +445,12 @@ p {
     transition: transform 0.3s ease;
 }
 
+/* Dark theme stat item */
+.dark-theme .stat-item {
+    background: #374151;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
 .stat-item:hover {
     transform: translateY(-5px);
 }
@@ -438,6 +466,11 @@ p {
     font-size: 1.1rem;
     color: #666;
     font-weight: 500;
+}
+
+/* Dark theme stat label */
+.dark-theme .stat-label {
+    color: #d1d5db;
 }
 
 /* Page Header */
@@ -462,6 +495,11 @@ p {
     padding: 80px 0;
 }
 
+/* Dark theme about content */
+.dark-theme .about-content {
+    background: #111827;
+}
+
 .about-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -474,9 +512,19 @@ p {
     color: #1f2937;
 }
 
+/* Dark theme about text */
+.dark-theme .about-text h2 {
+    color: #f9fafb;
+}
+
 .about-text h3 {
     margin: 2rem 0 1rem;
     color: #374151;
+}
+
+/* Dark theme about text h3 */
+.dark-theme .about-text h3 {
+    color: #e5e7eb;
 }
 
 .about-text p {
@@ -485,12 +533,23 @@ p {
     line-height: 1.7;
 }
 
+/* Dark theme about text p */
+.dark-theme .about-text p {
+    color: #d1d5db;
+}
+
 .profile-card {
     background: white;
     padding: 2rem;
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     text-align: center;
+}
+
+/* Dark theme profile card */
+.dark-theme .profile-card {
+    background: #374151;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .profile-avatar {
@@ -524,6 +583,11 @@ p {
     margin-bottom: 1.5rem;
 }
 
+/* Dark theme profile title */
+.dark-theme .profile-title {
+    color: #d1d5db;
+}
+
 .profile-details {
     text-align: left;
 }
@@ -534,6 +598,11 @@ p {
     gap: 0.5rem;
     margin-bottom: 0.75rem;
     color: #6b7280;
+}
+
+/* Dark theme detail item */
+.dark-theme .detail-item {
+    color: #d1d5db;
 }
 
 .detail-item i {
@@ -552,6 +621,11 @@ p {
     color: #374151;
     margin-bottom: 1rem;
     font-size: 1.1rem;
+}
+
+/* Dark theme resume section */
+.dark-theme .resume-section h4 {
+    color: #e5e7eb;
 }
 
 .resume-buttons {
@@ -606,6 +680,11 @@ p {
     background: #f8fafc;
 }
 
+/* Dark theme interests section */
+.dark-theme .interests {
+    background: #1f2937;
+}
+
 .interests h2 {
     text-align: center;
     margin-bottom: 3rem;
@@ -626,6 +705,12 @@ p {
     transition: transform 0.3s ease;
 }
 
+/* Dark theme interest item */
+.dark-theme .interest-item {
+    background: #374151;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
 .interest-item:hover {
     transform: translateY(-5px);
 }
@@ -641,13 +726,28 @@ p {
     color: #1f2937;
 }
 
+/* Dark theme interest item h3 */
+.dark-theme .interest-item h3 {
+    color: #f9fafb;
+}
+
 .interest-item p {
     color: #6b7280;
+}
+
+/* Dark theme interest item p */
+.dark-theme .interest-item p {
+    color: #d1d5db;
 }
 
 /* Skills Page */
 .skills-section {
     padding: 80px 0;
+}
+
+/* Dark theme skills section */
+.dark-theme .skills-section {
+    background: #111827;
 }
 
 .skills-section h2 {
@@ -670,6 +770,13 @@ p {
     border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+/* Dark theme skill category */
+.dark-theme .skill-category {
+    background: #374151;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .skill-category:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
@@ -680,6 +787,12 @@ p {
     color: #1f2937;
     border-bottom: 2px solid #e5e7eb;
     padding-bottom: 0.5rem;
+}
+
+/* Dark theme skill category h3 */
+.dark-theme .skill-category h3 {
+    color: #f9fafb;
+    border-bottom: 2px solid #4b5563;
 }
 
 .skill-items {
@@ -701,12 +814,22 @@ p {
     color: #374151;
 }
 
+/* Dark theme skill name */
+.dark-theme .skill-name {
+    color: #e5e7eb;
+}
+
 .skill-bar {
     flex: 1;
     height: 8px;
     background: #e5e7eb;
     border-radius: 4px;
     overflow: hidden;
+}
+
+/* Dark theme skill bar */
+.dark-theme .skill-bar {
+    background: #4b5563;
 }
 
 .skill-progress {
@@ -726,6 +849,11 @@ p {
 .languages-section {
     padding: 80px 0;
     background: #f8fafc;
+}
+
+/* Dark theme languages section */
+.dark-theme .languages-section {
+    background: #1f2937;
 }
 
 .languages-section h2 {
@@ -748,6 +876,12 @@ p {
     transition: transform 0.3s ease;
 }
 
+/* Dark theme language item */
+.dark-theme .language-item {
+    background: #374151;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
 .language-item:hover {
     transform: translateY(-5px);
 }
@@ -763,14 +897,29 @@ p {
     color: #1f2937;
 }
 
+/* Dark theme language item h3 */
+.dark-theme .language-item h3 {
+    color: #f9fafb;
+}
+
 .language-item p {
     color: #6b7280;
     font-weight: 500;
 }
 
+/* Dark theme language item p */
+.dark-theme .language-item p {
+    color: #d1d5db;
+}
+
 /* Soft Skills */
 .soft-skills {
     padding: 80px 0;
+}
+
+/* Dark theme soft skills section */
+.dark-theme .soft-skills {
+    background: #111827;
 }
 
 .soft-skills h2 {
@@ -793,6 +942,12 @@ p {
     transition: transform 0.3s ease;
 }
 
+/* Dark theme soft skill item */
+.dark-theme .soft-skill-item {
+    background: #374151;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
 .soft-skill-item:hover {
     transform: translateY(-5px);
 }
@@ -808,14 +963,29 @@ p {
     color: #1f2937;
 }
 
+/* Dark theme soft skill item h3 */
+.dark-theme .soft-skill-item h3 {
+    color: #f9fafb;
+}
+
 .soft-skill-item p {
     color: #6b7280;
+}
+
+/* Dark theme soft skill item p */
+.dark-theme .soft-skill-item p {
+    color: #d1d5db;
 }
 
 /* Projects Page */
 .project-filters {
     padding: 40px 0;
     background: #f8fafc;
+}
+
+/* Dark theme project filters */
+.dark-theme .project-filters {
+    background: #1f2937;
 }
 
 .filter-buttons {
@@ -836,6 +1006,13 @@ p {
     font-weight: 500;
 }
 
+/* Dark theme filter button */
+.dark-theme .filter-btn {
+    border: 2px solid #4b5563;
+    background: #374151;
+    color: #d1d5db;
+}
+
 .filter-btn:hover,
 .filter-btn.active {
     border-color: #2563eb;
@@ -845,6 +1022,11 @@ p {
 
 .projects-section {
     padding: 80px 0;
+}
+
+/* Dark theme projects section */
+.dark-theme .projects-section {
+    background: #111827;
 }
 
 .projects-grid {
@@ -859,6 +1041,12 @@ p {
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Dark theme project card */
+.dark-theme .project-card {
+    background: #374151;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .project-card:hover {
@@ -932,10 +1120,20 @@ p {
     color: #1f2937;
 }
 
+/* Dark theme project content h3 */
+.dark-theme .project-content h3 {
+    color: #f9fafb;
+}
+
 .project-content p {
     margin-bottom: 1.5rem;
     color: #6b7280;
     line-height: 1.6;
+}
+
+/* Dark theme project content p */
+.dark-theme .project-content p {
+    color: #d1d5db;
 }
 
 .project-tech {
@@ -953,10 +1151,21 @@ p {
     font-weight: 500;
 }
 
+/* Dark theme tech tag */
+.dark-theme .tech-tag {
+    background: #1e40af;
+    color: #dbeafe;
+}
+
 /* Featured Project */
 .featured-project {
     padding: 80px 0;
     background: #f8fafc;
+}
+
+/* Dark theme featured project */
+.dark-theme .featured-project {
+    background: #1f2937;
 }
 
 .featured-project h2 {
@@ -993,10 +1202,20 @@ p {
     color: #1f2937;
 }
 
+/* Dark theme featured details h3 */
+.dark-theme .featured-details h3 {
+    color: #f9fafb;
+}
+
 .featured-details p {
     margin-bottom: 2rem;
     color: #6b7280;
     line-height: 1.7;
+}
+
+/* Dark theme featured details p */
+.dark-theme .featured-details p {
+    color: #d1d5db;
 }
 
 .featured-tech {
@@ -1012,6 +1231,11 @@ p {
 /* Education Page */
 .education-section {
     padding: 80px 0;
+}
+
+/* Dark theme education section */
+.dark-theme .education-section {
+    background: #111827;
 }
 
 .education-section h2 {
@@ -1062,6 +1286,12 @@ p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
+/* Dark theme timeline content */
+.dark-theme .timeline-content {
+    background: #374151;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
 .timeline-item:nth-child(odd) .timeline-content {
     left: 0;
 }
@@ -1088,6 +1318,11 @@ p {
     margin-bottom: 1rem;
 }
 
+/* Dark theme timeline content h4 */
+.dark-theme .timeline-content h4 {
+    color: #d1d5db;
+}
+
 .timeline-details {
     display: flex;
     gap: 1rem;
@@ -1107,6 +1342,11 @@ p {
 .certifications-section {
     padding: 80px 0;
     background: #f8fafc;
+}
+
+/* Dark theme certifications section */
+.dark-theme .certifications-section {
+    background: #1f2937;
 }
 
 .certifications-section h2 {
@@ -1129,6 +1369,12 @@ p {
     transition: transform 0.3s ease;
 }
 
+/* Dark theme certification card */
+.dark-theme .certification-card {
+    background: #374151;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
 .certification-card:hover {
     transform: translateY(-5px);
 }
@@ -1145,16 +1391,31 @@ p {
     font-size: 1.25rem;
 }
 
+/* Dark theme certification card h3 */
+.dark-theme .certification-card h3 {
+    color: #f9fafb;
+}
+
 .cert-issuer {
     color: #6b7280;
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
 
+/* Dark theme cert issuer */
+.dark-theme .cert-issuer {
+    color: #d1d5db;
+}
+
 .cert-date, .cert-valid {
     color: #9ca3af;
     font-size: 0.875rem;
     margin-bottom: 0.25rem;
+}
+
+/* Dark theme cert date and valid */
+.dark-theme .cert-date, .dark-theme .cert-valid {
+    color: #9ca3af;
 }
 
 .cert-badge {
@@ -1173,6 +1434,11 @@ p {
 /* Courses */
 .courses-section {
     padding: 80px 0;
+}
+
+/* Dark theme courses section */
+.dark-theme .courses-section {
+    background: #111827;
 }
 
 .courses-section h2 {
@@ -1194,6 +1460,12 @@ p {
     transition: transform 0.3s ease;
 }
 
+/* Dark theme course item */
+.dark-theme .course-item {
+    background: #374151;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
 .course-item:hover {
     transform: translateY(-5px);
 }
@@ -1207,6 +1479,11 @@ p {
     font-weight: 500;
 }
 
+/* Dark theme course platform */
+.dark-theme .course-platform {
+    color: #d1d5db;
+}
+
 .course-platform i {
     font-size: 1.25rem;
 }
@@ -1216,9 +1493,19 @@ p {
     color: #1f2937;
 }
 
+/* Dark theme course item h3 */
+.dark-theme .course-item h3 {
+    color: #f9fafb;
+}
+
 .course-item p {
     color: #6b7280;
     margin-bottom: 1rem;
+}
+
+/* Dark theme course item p */
+.dark-theme .course-item p {
+    color: #d1d5db;
 }
 
 .course-status {
@@ -1298,6 +1585,11 @@ p {
     background: #ffffff;
 }
 
+/* Dark theme contact section */
+.dark-theme .contact-section {
+    background: #111827;
+}
+
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1311,14 +1603,30 @@ p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
+/* Dark theme contact info */
+.dark-theme .contact-info {
+    background: #374151;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
 .contact-info h2 {
     margin-bottom: 1rem;
     color: #1f2937;
 }
 
+/* Dark theme contact info h2 */
+.dark-theme .contact-info h2 {
+    color: #f9fafb;
+}
+
 .contact-info > p {
     margin-bottom: 2rem;
     color: #6b7280;
+}
+
+/* Dark theme contact info p */
+.dark-theme .contact-info > p {
+    color: #d1d5db;
 }
 
 .contact-items {
@@ -1352,9 +1660,19 @@ p {
     color: #1f2937;
 }
 
+/* Dark theme contact details h3 */
+.dark-theme .contact-details h3 {
+    color: #f9fafb;
+}
+
 .contact-details p {
     margin-bottom: 0.5rem;
     color: #6b7280;
+}
+
+/* Dark theme contact details p */
+.dark-theme .contact-details p {
+    color: #d1d5db;
 }
 
 .contact-details a {
@@ -1370,6 +1688,11 @@ p {
 .social-contact h3 {
     margin-bottom: 1rem;
     color: #1f2937;
+}
+
+/* Dark theme social contact h3 */
+.dark-theme .social-contact h3 {
+    color: #f9fafb;
 }
 
 .social-contact .social-links {
@@ -1416,9 +1739,20 @@ p {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
+/* Dark theme contact form */
+.dark-theme .contact-form {
+    background: #374151;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
 .contact-form h2 {
     margin-bottom: 2rem;
     color: #1f2937;
+}
+
+/* Dark theme contact form h2 */
+.dark-theme .contact-form h2 {
+    color: #f9fafb;
 }
 
 .form-group {
@@ -1432,6 +1766,11 @@ p {
     font-weight: 500;
 }
 
+/* Dark theme form group label */
+.dark-theme .form-group label {
+    color: #e5e7eb;
+}
+
 .form-group input,
 .form-group select,
 .form-group textarea {
@@ -1441,6 +1780,15 @@ p {
     border-radius: 8px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
+}
+
+/* Dark theme form inputs */
+.dark-theme .form-group input,
+.dark-theme .form-group select,
+.dark-theme .form-group textarea {
+    background: #4b5563;
+    border: 2px solid #6b7280;
+    color: #f9fafb;
 }
 
 .form-group input:focus,
@@ -1461,6 +1809,11 @@ p {
     background: #f8fafc;
 }
 
+/* Dark theme FAQ section */
+.dark-theme .faq-section {
+    background: #1f2937;
+}
+
 .faq-section h2 {
     text-align: center;
     margin-bottom: 3rem;
@@ -1479,6 +1832,12 @@ p {
     overflow: hidden;
 }
 
+/* Dark theme FAQ item */
+.dark-theme .faq-item {
+    background: #374151;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
 .faq-question {
     padding: 1.5rem;
     display: flex;
@@ -1489,13 +1848,18 @@ p {
 }
 
 .faq-question:hover {
-    background: #f9fafb;
+    background: #3b93eb;
 }
 
 .faq-question h3 {
     margin: 0;
     color: #1f2937;
     font-size: 1.1rem;
+}
+
+/* Dark theme FAQ question h3 */
+.dark-theme .faq-question h3 {
+    color: #f9fafb;
 }
 
 .faq-question i {
@@ -1511,6 +1875,11 @@ p {
     padding: 0 1.5rem 1.5rem;
     color: #6b7280;
     line-height: 1.6;
+}
+
+/* Dark theme FAQ answer */
+.dark-theme .faq-answer {
+    color: #d1d5db;
 }
 
 /* Footer */
@@ -1581,37 +1950,112 @@ p {
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         padding: 2rem 0;
         z-index: 999;
+        /* Ensure consistent mobile menu styling */
+        list-style: none;
+        margin: 0;
+        height: calc(100vh - 70px);
+        overflow-y: auto;
     }
     
     .dark-theme .nav-menu {
-        background-color: rgba(31, 41, 55, 0.98);
-        backdrop-filter: blur(10px);
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.3);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        background-color: #1f2937;
+        backdrop-filter: none;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.2);
+        border: none;
+        padding: 2rem 0;
+        /* Ensure exact same dimensions and spacing as light theme */
+        width: 100%;
+        top: 70px;
+        left: -100%;
+        transition: 0.3s;
+        z-index: 999;
+        margin: 0;
+        height: calc(100vh - 70px);
+        overflow-y: auto;
     }
     
     .dark-theme .nav-menu .nav-item {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        padding: 1rem 0;
+        border-bottom: none;
+        padding: 0;
+        margin: 0;
+        /* Ensure exact same spacing as light theme */
+        display: block;
+        width: 100%;
     }
-    
     .dark-theme .nav-menu .nav-item:last-child {
         border-bottom: none;
     }
     
     .dark-theme .nav-menu .nav-link {
         color: #f9fafb;
-        font-size: 1.1rem;
-        font-weight: 500;
+        font-size: inherit;
+        font-weight: inherit;
+        padding: 1rem 0;
+        margin: 0;
+        /* Ensure exact same dimensions and spacing as light theme */
+        display: block;
+        width: 100%;
+        text-align: center;
+        position: relative;
     }
     
     .dark-theme .nav-menu .nav-link:hover,
     .dark-theme .nav-menu .nav-link.active {
         color: #60a5fa;
     }
+    
+    /* Dark theme mobile navigation active link styles */
+    .dark-theme .nav-menu .nav-link.active::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 2px;
+        background: #60a5fa;
+        transition: all 0.3s ease;
+    }
 
     .nav-menu.active {
         left: 0;
+    }
+
+    /* Mobile nav items styling for light theme */
+    .nav-menu .nav-item {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-menu .nav-link {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        margin: 0;
+        color: #333;
+        font-size: inherit;
+        font-weight: inherit;
+        position: relative;
+    }
+    
+    /* Mobile navigation active link styles */
+    .nav-menu .nav-link.active {
+        color: #2563eb;
+    }
+    
+    .nav-menu .nav-link.active::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 2px;
+        background: #2563eb;
+        transition: all 0.3s ease;
     }
 
     .hero-container {
@@ -2085,5 +2529,16 @@ a:focus {
         border: none !important;
         box-shadow: none !important;
         backdrop-filter: none !important;
+        gap: 2rem !important;
+    }
+    
+    .dark-theme .nav-menu .nav-item {
+        border-bottom: none !important;
+        padding: 0 !important;
+    }
+    
+    .dark-theme .nav-menu .nav-link {
+        font-size: inherit !important;
+        font-weight: inherit !important;
     }
 }
